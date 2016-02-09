@@ -49,19 +49,21 @@
                 question.gender = questionDictionary[@"gender"];
                 [self.questions addObject:question];
                 
-                if ([question.gender isEqualToString:@"masculin"]) {
-                    [currentLesson.masculin addObject:question];}
-                if ([question.gender isEqualToString:@"feminin"]) {
-                    [currentLesson.feminin addObject:question];}
-             
-                    [currentLesson.questions addObject:question];
-            }
+                if ([question.gender isEqualToString:@"masculin"])
+                {
+                    [currentLesson.masculin addObject:question.ending];
+                }
+                if ([question.gender isEqualToString:@"feminin"])
+                {
+                    [currentLesson.feminin addObject:question.ending];}
+                }
             
           
             [self.lessonsArray addObject:currentLesson];
         }
         
         NSLog(@"%@",self.questions);
+        NSLog(@"%@",self.lessonsArray);
         }
     
  

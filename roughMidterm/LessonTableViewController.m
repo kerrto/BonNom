@@ -7,6 +7,7 @@
 //
 
 #import "LessonTableViewController.h"
+#import "LessonTableViewCell.h"
 #import "Question.h"
 #import "Lesson.h"
 #import "JSONParse.h"
@@ -21,19 +22,17 @@
     [super viewDidLoad];
     JSONParse *json=[[JSONParse alloc]init];
     [json loadEndingQuestionWithJSON];
+    self.lessonArray=json.lessonsArray;
     
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 #pragma mark - Table view data source
 
@@ -43,25 +42,34 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
 
-    return 0;
+
+    return self.lessonArray.count;
 }
 
 
 
-    
 
 
-
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: forIndexPath:indexPath];
+    LessonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    Lesson *lesson=self.lessonArray[indexPath.row];
+    cell.Lesson.text=lesson.name;
+    
+  
+    
+    cell.mEnd1.text=[lesson.masculin objectAtIndex:0];
+    cell.mEnd2.text=[lesson.masculin objectAtIndex:1];
+    cell.mEnd3.text=[lesson.masculin objectAtIndex:2];
+    cell.mEnd4.text=[lesson.masculin objectAtIndex:3];
+    cell.fEnd1.text=[lesson.feminin objectAtIndex:0];
+    cell.fEnd2.text=[lesson.feminin objectAtIndex:1];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
