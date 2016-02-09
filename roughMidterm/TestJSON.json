@@ -1,7 +1,7 @@
 {
 "endings": [
 {
-"end":"age",
+"end":"-age",
 "words":["reportage","passage","sondage","virage","fromage","nuage","village","garage", "message"],
 "exceptions":["cage", "horlage", "image", "nage", "rage", "page"],
 "lesson":"lesson1",
@@ -9,7 +9,7 @@
 },
 
 {
-"end":"ige",
+"end":"-ige",
 "words":["prodige"],
 "exceptions":["tige"],
 "lesson":"lesson1",
@@ -17,7 +17,7 @@
 },
 
 {
-"end":"ège",
+"end":"-ège",
 "words":["sortilège"],
 "exceptions":["Norvège"],
 "lesson":"lesson1",
@@ -25,7 +25,7 @@
 },
 
 {
-"end":"oge",
+"end":"-oge",
 "words":["éloge"],
 "exceptions":["loge"],
 "lesson":"lesson1",
@@ -33,7 +33,7 @@
 },
 
 {
-"end":"uge",
+"end":"-uge",
 "words":["refuge"],
 "exceptions":["luge"],
 "lesson":"lesson1",
@@ -41,7 +41,7 @@
 },
 
 {
-"end":"ade",
+"end":"-ade",
 "words":["abassade","cascade","grenade","limonade","promenade","salad"],
 "exceptions":["grade", "jade","stade"],
 "lesson":"lesson1",
@@ -49,8 +49,8 @@
 },
 
 {
-"end":"aie",
-"words":["baie","craie","haie","monnaie","palmerie","taie"],
+"end":"-aie",
+"words":["baie","craie","haie","monnaie","taie"],
 "exceptions":[],
 "lesson":"lesson1",
 "gender":"feminin"

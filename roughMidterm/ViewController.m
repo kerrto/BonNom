@@ -128,7 +128,7 @@
     
     self.questionString=[self.mixQuestionArray objectAtIndex:newResult];
     
-    self.questionLabel.text=self.questionString;
+    self.questionLabel.text=self.questionString;  
     }
 
 }
@@ -137,6 +137,7 @@
 
 
 - (IBAction)masculinButton:(id)sender {
+    
     
     BOOL containsException=[self.currentQuestion.exceptions containsObject:self.questionString];
     BOOL isMasculin = [self.currentQuestion.gender isEqualToString:@"masculin"];
@@ -150,32 +151,49 @@
     if (containsException && isFeminin)
     {
         self.correctLabel.text=@"Oui!!!";
-        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
+        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     
     if (!containsException && isMasculin)
     {
         self.correctLabel.text=@"Oui!!!";
-        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
+        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     if (!containsException && isFeminin) {
         self.correctLabel.text=@"Non!!!";
-         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
+         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
   
 
 }
 
 - (IBAction)femininButton:(id)sender {
-    if ([self.currentQuestion.gender isEqualToString:@"feminin"]){
-        self.correctLabel.text=@"Oui!!!";
-         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
-    }
-    else {
-        self.correctLabel.text=@"Non!!!";
+    
+    BOOL containsException=[self.currentQuestion.exceptions containsObject:self.questionString];
+    BOOL isMasculin = [self.currentQuestion.gender isEqualToString:@"masculin"];
+    BOOL isFeminin = [self.currentQuestion.gender isEqualToString:@"feminin"];
+    
+    if (containsException && isFeminin)
+    {
+        self.correctLabel.text=@"Non! This is an exception! It's masculin";
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
     }
- 
+    
+    if (containsException && isMasculin)
+        {
+            self.correctLabel.text=@"Oui!!!";
+            [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
+        }
+    if (!containsException && isFeminin)
+    {
+        self.correctLabel.text=@"Oui!!!";
+        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
+    }
+    if (!containsException && isMasculin)
+    {
+    self.correctLabel.text=@"Non!!!";
+    [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
+    }
 }
 
 -(void)resetLabels {
