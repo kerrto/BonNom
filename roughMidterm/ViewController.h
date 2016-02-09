@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GameModel.h"
+
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) NSMutableArray *questions;
 
 
 

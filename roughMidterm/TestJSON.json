@@ -1,59 +1,109 @@
 {
-"endings": [
+    "lessons":[
+                {
+                    "name": "lesson1",
+                    "questions": [
+                        {
+                        "end": "-age",
+                        "words": ["reportage", "passage", "sondage", "virage", "fromage", "nuage", "village", "garage", "message"],
+                        "exceptions": ["cage", "horlage", "image", "nage", "rage", "page"],
+                        "gender": "masculin"
+                        },
+
+                        {
+                        "end": "-ige",
+                        "words": ["prodige"],
+                        "exceptions": ["tige"],
+                        "gender": "masculin"
+                        },
+
+                        {
+                        "end": "-ège",
+                        "words": ["sortilège"],
+                        "exceptions": ["Norvège"],
+                        "gender": "masculin"
+                        },
+
+                        {
+                        "end": "-oge",
+                        "words": ["éloge"],
+                        "exceptions": ["loge"],
+                        "gender": "masculin"
+                        },
+
+                        {
+                        "end": "-uge",
+                        "words": ["refuge"],
+                        "exceptions": ["luge"],
+                        "gender": "masculin"
+                        },
+
+                        {
+                        "end": "-ade",
+                        "words": ["abassade", "cascade", "grenade", "limonade", "promenade", "salad"],
+                        "exceptions": ["grade", "jade", "stade"],
+                        "gender": "feminin"
+                        },
+
+                        {
+                        "end": "-aie",
+                        "words": ["baie", "craie", "haie", "monnaie", "taie"],
+                        "exceptions": [],
+                        "gender": "feminin"
+                        }
+
+
+                    ]
+
+                },
+
 {
-"end":"-age",
-"words":["reportage","passage","sondage","virage","fromage","nuage","village","garage", "message"],
-"exceptions":["cage", "horlage", "image", "nage", "rage", "page"],
-"lesson":"lesson1",
-"gender":"masculin"
+"name": "lesson2",
+"questions":[
+
+{
+"end": "-eau",
+"words": ["bateau", "chameau", "château", "cerveau"],
+"exceptions": ["peau", "eau"],
+"gender": "masculin"
 },
 
 {
-"end":"-ige",
-"words":["prodige"],
-"exceptions":["tige"],
-"lesson":"lesson1",
-"gender":"masculin"
+"end": "-ou",
+"words": ["bijou", "chou"],
+"exceptions": [],
+"gender": "masculin"
 },
 
 {
-"end":"-ège",
-"words":["sortilège"],
-"exceptions":["Norvège"],
-"lesson":"lesson1",
-"gender":"masculin"
+"end": "-ant",
+"words": ["restaurant", "chant", "diamant"],
+"exceptions": [],
+"gender": "masculin"
 },
 
 {
-"end":"-oge",
-"words":["éloge"],
-"exceptions":["loge"],
-"lesson":"lesson1",
-"gender":"masculin"
+"end": "-ent",
+"words": ["argent", "talent", "vent"],
+"exceptions": ["dent"],
+"gender": "masculin"
 },
 
 {
-"end":"-uge",
-"words":["refuge"],
-"exceptions":["luge"],
-"lesson":"lesson1",
-"gender":"masculin"
+"end": "-aison",
+"words": ["raison", "maison", "saison", "conjugasion"],
+"exceptions": [],
+"gender": "feminin"
 },
 
 {
-"end":"-ade",
-"words":["abassade","cascade","grenade","limonade","promenade","salad"],
-"exceptions":["grade", "jade","stade"],
-"lesson":"lesson1",
-"gender":"feminin"
-},
+"end": "-oison",
+"words": ["cloison", "toison"],
+"exceptions": ["poison"],
+"gender": "feminin"
+}
 
-{
-"end":"-aie",
-"words":["baie","craie","haie","monnaie","taie"],
-"exceptions":[],
-"lesson":"lesson1",
-"gender":"feminin"
+]
 }
 ]
 }

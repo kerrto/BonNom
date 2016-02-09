@@ -19,8 +19,11 @@
 		ABF88EE81C654DD20067C773 /* FrenchInfo in Resources */ = {isa = PBXBuildFile; fileRef = ABF88EE71C654DD20067C773 /* FrenchInfo */; };
 		ABFA44B61C6823A10053F585 /* extra data in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B51C6823A10053F585 /* extra data */; };
 		ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B71C6824BC0053F585 /* TestJSON.json */; };
-		ABFA44C11C6907D40053F585 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44C01C6907D40053F585 /* GameModel.m */; };
 		ABFA44CA1C69424D0053F585 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44C91C69424D0053F585 /* Question.m */; };
+		ABFA44CD1C6A4E7C0053F585 /* LessonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */; };
+		ABFA44D01C6A4EAC0053F585 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44CF1C6A4EAC0053F585 /* LessonTableViewCell.m */; };
+		ABFA44D31C6A53EF0053F585 /* JSONParse.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44D21C6A53EF0053F585 /* JSONParse.m */; };
+		ABFA44D61C6A64A10053F585 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44D51C6A64A10053F585 /* Lesson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +64,16 @@
 		ABF88EE71C654DD20067C773 /* FrenchInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FrenchInfo; sourceTree = "<group>"; };
 		ABFA44B51C6823A10053F585 /* extra data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "extra data"; sourceTree = "<group>"; };
 		ABFA44B71C6824BC0053F585 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
-		ABFA44BF1C6907D40053F585 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
-		ABFA44C01C6907D40053F585 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 		ABFA44C81C69424D0053F585 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		ABFA44C91C69424D0053F585 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		ABFA44CB1C6A4E7C0053F585 /* LessonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewController.h; sourceTree = "<group>"; };
+		ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewController.m; sourceTree = "<group>"; };
+		ABFA44CE1C6A4EAC0053F585 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
+		ABFA44CF1C6A4EAC0053F585 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
+		ABFA44D11C6A53EF0053F585 /* JSONParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParse.h; sourceTree = "<group>"; };
+		ABFA44D21C6A53EF0053F585 /* JSONParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParse.m; sourceTree = "<group>"; };
+		ABFA44D41C6A64A00053F585 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson.h; sourceTree = "<group>"; };
+		ABFA44D51C6A64A10053F585 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +132,14 @@
 				AB89A2521C64597000B9F46A /* ViewController.h */,
 				ABFA44B71C6824BC0053F585 /* TestJSON.json */,
 				AB89A2551C64597000B9F46A /* Main.storyboard */,
-				ABFA44BF1C6907D40053F585 /* GameModel.h */,
-				ABFA44C01C6907D40053F585 /* GameModel.m */,
+				ABFA44D11C6A53EF0053F585 /* JSONParse.h */,
+				ABFA44D21C6A53EF0053F585 /* JSONParse.m */,
+				ABFA44CE1C6A4EAC0053F585 /* LessonTableViewCell.h */,
+				ABFA44CF1C6A4EAC0053F585 /* LessonTableViewCell.m */,
+				ABFA44CB1C6A4E7C0053F585 /* LessonTableViewController.h */,
+				ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */,
+				ABFA44D41C6A64A00053F585 /* Lesson.h */,
+				ABFA44D51C6A64A10053F585 /* Lesson.m */,
 				AB89A25B1C64597000B9F46A /* Assets.xcassets */,
 				AB89A25D1C64597000B9F46A /* LaunchScreen.storyboard */,
 				AB89A2601C64597000B9F46A /* Info.plist */,
@@ -298,12 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABFA44C11C6907D40053F585 /* GameModel.m in Sources */,
 				AB89A25A1C64597000B9F46A /* roughMidterm.xcdatamodeld in Sources */,
 				AB89A2541C64597000B9F46A /* ViewController.m in Sources */,
+				ABFA44D31C6A53EF0053F585 /* JSONParse.m in Sources */,
 				AB89A2511C64597000B9F46A /* AppDelegate.m in Sources */,
 				ABFA44CA1C69424D0053F585 /* Question.m in Sources */,
+				ABFA44CD1C6A4E7C0053F585 /* LessonTableViewController.m in Sources */,
+				ABFA44D61C6A64A10053F585 /* Lesson.m in Sources */,
 				AB89A24E1C64597000B9F46A /* main.m in Sources */,
+				ABFA44D01C6A4EAC0053F585 /* LessonTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

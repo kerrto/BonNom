@@ -8,13 +8,18 @@
 
 #import "ViewController.h"
 #import "Question.h"
+#import "LessonTableViewController.h"
+#import "Lesson.h"
+#import "JSONParse.h"
+
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;
-@property (strong, nonatomic) NSMutableArray *questionArray;
+
 @property (strong, nonatomic) Question *currentQuestion;
 @property (strong, nonatomic) NSString *questionString;
 @property (strong, nonatomic) IBOutlet UILabel *correctLabel;
+@property (strong, nonatomic) NSMutableArray *questionArray;
 
 @property (strong, nonatomic) IBOutlet UISwitch *endSwitch;
 @property (strong, nonatomic) IBOutlet UISwitch *wordSwitch;
@@ -31,9 +36,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self loadEndingQuestionWithJSON];
+    JSONParse *json=[[JSONParse alloc]init];
+    [json loadEndingQuestionWithJSON];
+    self.questionArray=json.questions;
     [self updateQuestionLabel];
-   
+    NSLog(@"%@",json.lessonsArray);
    
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -45,43 +52,12 @@
 }
 
 
--(void)loadEndingQuestionWithJSON
-{
-    NSString *jsonPath =[[NSBundle mainBundle] pathForResource:@"TestJSON" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    NSError *error = nil;
-    NSDictionary *questionDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
-    self.questionArray=[[NSMutableArray alloc]init];
-    if (!error)
-    {
-        
-        NSArray* endingsObjects = questionDict[@"endings"];
-        for (NSDictionary* end in endingsObjects)
-        {
-        
-            Question *question=[[Question alloc]init];
-            
-            question.ending=end[@"end"];
-            question.lesson=end[@"lesson"];
-            question.words=end[@"words"];
-            question.exceptions=end[@"exceptions"];
-            question.gender=end[@"gender"];
-            
-            
-            [self.questionArray addObject:question];
-            
-        }
-    }
-}
-
-
 -(void)createQuestionArray
 {
     BOOL endSwtichOn=(self.endSwitch.on);
     BOOL wordSwitchOn=(self.wordSwitch.on);
     BOOL exceptionSwitchOn=(self.exceptionSwitch.on);
-    
+  
     NSUInteger questionArrayCount=self.questionArray.count;
     int questionInt=(int)questionArrayCount;
     int result=arc4random_uniform(questionInt);

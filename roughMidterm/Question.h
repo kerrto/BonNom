@@ -12,8 +12,6 @@
 
 @property (nonatomic, strong) NSString *gender;
 
-@property (nonatomic, strong) NSArray *lesson;
-
 @property (nonatomic, strong) NSArray *exceptions;
 
 @property (nonatomic, strong) NSArray *words;
