@@ -28,7 +28,8 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self loadEndingQuestionWithJSON];
     [self updateQuestionLabel];
@@ -37,23 +38,27 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
--(void)loadEndingQuestionWithJSON {
+-(void)loadEndingQuestionWithJSON
+{
     NSString *jsonPath =[[NSBundle mainBundle] pathForResource:@"TestJSON" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     
     NSError *error = nil;
     NSDictionary *questionDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
     self.questionArray=[[NSMutableArray alloc]init];
-    if (!error) {
+    if (!error)
+    {
         
         NSArray* endingsObjects = questionDict[@"endings"];
-        for (NSDictionary* end in endingsObjects) {
+        for (NSDictionary* end in endingsObjects)
+        {
         
             Question *question=[[Question alloc]init];
             
@@ -102,7 +107,8 @@
         {
         
         }
-        else if (self.currentQuestion.exceptions.count>0) {
+        else if (self.currentQuestion.exceptions.count>0)
+        {
         NSUInteger exceptionArrayCount=self.currentQuestion.exceptions.count;
         int exceptionInt=(int)exceptionArrayCount;
         int exceptionResult=arc4random_uniform(exceptionInt);
@@ -117,13 +123,15 @@
     
 }
 
--(void)updateQuestionLabel {
+-(void)updateQuestionLabel
+{
     [self createQuestionArray];
     
     NSUInteger mixQuestionArrayCount=self.mixQuestionArray.count;
     int newQuestionInt=(int)mixQuestionArrayCount;
     
-    if (newQuestionInt>0) {
+    if (newQuestionInt>0)
+    {
     int newResult=arc4random_uniform(newQuestionInt);
     
     self.questionString=[self.mixQuestionArray objectAtIndex:newResult];
@@ -144,7 +152,8 @@
     BOOL isFeminin = [self.currentQuestion.gender isEqualToString:@"feminin"];
     
     
-    if (containsException && isMasculin) {
+    if (containsException && isMasculin)
+    {
          self.correctLabel.text=@"Non! This is an exception! It's feminin";
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
     }
@@ -159,7 +168,8 @@
         self.correctLabel.text=@"Oui!!!";
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
-    if (!containsException && isFeminin) {
+    if (!containsException && isFeminin)
+    {
         self.correctLabel.text=@"Non!!!";
          [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
@@ -180,10 +190,10 @@
     }
     
     if (containsException && isMasculin)
-        {
+    {
             self.correctLabel.text=@"Oui!!!";
             [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
-        }
+    }
     if (!containsException && isFeminin)
     {
         self.correctLabel.text=@"Oui!!!";
@@ -196,7 +206,8 @@
     }
 }
 
--(void)resetLabels {
+-(void)resetLabels
+{
     self.correctLabel.text=@"";
     [self updateQuestionLabel];
 }
