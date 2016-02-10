@@ -7,12 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LessonTableViewCell.h"
 
 
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) NSMutableArray *questions;
+@property (strong, nonatomic) NSMutableArray *questionArray;
+@property (strong, nonatomic) LessonTableViewCell *cell;
+@property (copy, nonatomic) NSArray *allQuestions;
 
+
+
+
+
+//Set up NSNotificationCenter
+
+//-(void)postNotificationWithString: (NSString)
 
 
 

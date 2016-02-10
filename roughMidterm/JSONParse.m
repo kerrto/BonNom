@@ -14,6 +14,17 @@
 
 @implementation JSONParse
 
+-(instancetype)init {
+    self=[super init];
+    if (self) {
+        _lessonsArray=[[NSMutableArray alloc]init];
+        _questions=[[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+
+
 
 -(void)loadEndingQuestionWithJSON
 {
@@ -47,6 +58,7 @@
                 question.words = questionDictionary[@"words"];
                 question.exceptions = questionDictionary[@"exceptions"];
                 question.gender = questionDictionary[@"gender"];
+                question.lesson= questionDictionary[@"lesson"];
                 [self.questions addObject:question];
                 
                 if ([question.gender isEqualToString:@"masculin"])
@@ -64,6 +76,7 @@
         
         NSLog(@"%@",self.questions);
         NSLog(@"%@",self.lessonsArray);
+        
         }
     
  

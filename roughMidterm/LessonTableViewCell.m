@@ -7,6 +7,21 @@
 //
 
 #import "LessonTableViewCell.h"
+#import "JSONParse.h"
+#import "Question.h"
+#import "Lesson.h"
+#import "LessonTableViewController.h"
+#import "ViewController.h"
+
+@interface LessonTableViewCell()
+@property (strong, nonatomic) IBOutlet UILabel *Lesson;
+@property (strong, nonatomic) IBOutlet UILabel *mEnd1;
+@property (strong, nonatomic) IBOutlet UILabel *mEnd2;
+@property (strong, nonatomic) IBOutlet UILabel *mEnd3;
+@property (strong, nonatomic) IBOutlet UILabel *mEnd4;
+@property (strong, nonatomic) IBOutlet UILabel *fEnd1;
+@property (strong, nonatomic) IBOutlet UILabel *fEnd2;
+@end
 
 @implementation LessonTableViewCell
 
@@ -19,5 +34,23 @@
 
     // Configure the view for the selected state
 }
+
+-(void) setLessonObject:(Lesson *)lessonObject
+{
+    _lessonObject = lessonObject;
+    self.Lesson.text= lessonObject.name;
+    self.mEnd1.text=[lessonObject.masculin objectAtIndex:0];
+    self.mEnd2.text=[lessonObject.masculin objectAtIndex:1];
+    self.mEnd3.text=[lessonObject.masculin objectAtIndex:2];
+    self.mEnd4.text=[lessonObject.masculin objectAtIndex:3];
+    self.fEnd1.text=[lessonObject.feminin objectAtIndex:0];
+    self.fEnd2.text=[lessonObject.feminin objectAtIndex:1];
+}
+
+
+- (IBAction)lessonSwitch:(UISwitch*)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"switch" object:self userInfo:@{@"lessonObject":self.lessonObject,@"switchState":@(sender.on)}];
+}
+
 
 @end

@@ -11,8 +11,11 @@
 #import "Question.h"
 #import "Lesson.h"
 #import "JSONParse.h"
+#import "ViewController.h"
 
 @interface LessonTableViewController ()
+
+@property (nonatomic, strong) LessonTableViewCell *cell;
 
 @end
 
@@ -23,6 +26,8 @@
     JSONParse *json=[[JSONParse alloc]init];
     [json loadEndingQuestionWithJSON];
     self.lessonArray=json.lessonsArray;
+    self.questionArray = json.questions;
+    
     
 }
 
@@ -30,7 +35,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//
+//-(void)removeQuestions {
+//    
+//   
+//    BOOL lessonSwitchOn=self.cell.lessonSwitch.on;
+//    
+//    if (!lessonSwitchOn) {
+//        JSONParse *jp=[[JSONParse alloc]init];
+//          Lesson *lesson=self.lessonArray[indexPath.row];
+//        for (Question *question in jp.questions) {
+//            if ([lesson.name isEqualToString:question.lesson]) {
+//                [jp.questions removeObject:question];
+//            }
+//            
+//            
+//        }
+//    }}
 
 
 
@@ -53,22 +74,15 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LessonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    self.cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    Lesson *lesson=self.lessonArray[indexPath.row];
-    cell.Lesson.text=lesson.name;
+    Lesson *lesson=self.lessonArray[indexPath.row];    
+    self.cell.lessonObject = lesson;
     
-  
-    
-    cell.mEnd1.text=[lesson.masculin objectAtIndex:0];
-    cell.mEnd2.text=[lesson.masculin objectAtIndex:1];
-    cell.mEnd3.text=[lesson.masculin objectAtIndex:2];
-    cell.mEnd4.text=[lesson.masculin objectAtIndex:3];
-    cell.fEnd1.text=[lesson.feminin objectAtIndex:0];
-    cell.fEnd2.text=[lesson.feminin objectAtIndex:1];
-    
-    return cell;
+    return self.cell;
 }
+
+
 
 
 /*

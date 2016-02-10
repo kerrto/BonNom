@@ -11,5 +11,6 @@
 @interface LessonTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSMutableArray *lessonArray;
+@property (nonatomic, strong) NSMutableArray *questionArray;
 
 @end

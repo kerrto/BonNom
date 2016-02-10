@@ -19,7 +19,7 @@
 @property (strong, nonatomic) Question *currentQuestion;
 @property (strong, nonatomic) NSString *questionString;
 @property (strong, nonatomic) IBOutlet UILabel *correctLabel;
-@property (strong, nonatomic) NSMutableArray *questionArray;
+
 
 @property (strong, nonatomic) IBOutlet UISwitch *endSwitch;
 @property (strong, nonatomic) IBOutlet UISwitch *wordSwitch;
@@ -38,9 +38,15 @@
     [super viewDidLoad];
     JSONParse *json=[[JSONParse alloc]init];
     [json loadEndingQuestionWithJSON];
+    self.allQuestions=json.questions;
     self.questionArray=json.questions;
-    [self updateQuestionLabel];
-    NSLog(@"%@",json.lessonsArray);
+     [self updateQuestionLabel];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (changeQuestionArray:) name:@"switch" object:nil];
+    
+
+   
+  
    
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -54,6 +60,21 @@
 
 -(void)createQuestionArray
 {
+   
+  if (self.questionArray.count==0)
+      
+  {
+        
+    self.correctLabel.text = @"You have to toggle a lesson (see next page)";
+      
+      [self.mixQuestionArray removeAllObjects];
+        
+    }
+    
+  else
+      
+  {
+      
     BOOL endSwtichOn=(self.endSwitch.on);
     BOOL wordSwitchOn=(self.wordSwitch.on);
     BOOL exceptionSwitchOn=(self.exceptionSwitch.on);
@@ -61,6 +82,9 @@
     NSUInteger questionArrayCount=self.questionArray.count;
     int questionInt=(int)questionArrayCount;
     int result=arc4random_uniform(questionInt);
+   
+ 
+    
     self.currentQuestion=[self.questionArray objectAtIndex:result];
     self.mixQuestionArray=[[NSMutableArray alloc]init];
     
@@ -96,6 +120,7 @@
     {
         self.correctLabel.text=@"You need to toggle a mode";
     }
+  }
     
 }
 
@@ -187,6 +212,42 @@
     self.correctLabel.text=@"";
     [self updateQuestionLabel];
 }
+
+-(void)changeQuestionArray:(NSNotification*)notification {
+    
+    
+    Lesson *lesson=notification.userInfo[@"lessonObject"];
+    
+    BOOL switchState = [notification.userInfo[@"switchState"] boolValue];
+    
+   
+    
+
+    
+    if (switchState) {
+        for (Question * question in self.allQuestions)
+        {
+            if ([question.lesson isEqualToString:lesson.name])
+            {
+                [self.questionArray addObject:question];
+            }
+        }
+    }
+    else {
+        for (Question* question in self.allQuestions)
+        {
+            if ([question.lesson isEqualToString:lesson.name])
+            {
+                [self.questionArray removeObject:question];
+                
+            }
+        }
+    }
+    NSLog(@"%lu",self.questionArray.count);
+}
+
+
+     
 
 
 

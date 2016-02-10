@@ -18,4 +18,6 @@
 
 @property (nonatomic, strong) NSString *ending;
 
+@property (nonatomic, strong) NSString *lesson;
+
 @end

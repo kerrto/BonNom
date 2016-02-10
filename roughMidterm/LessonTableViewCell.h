@@ -6,16 +6,18 @@
 //  Copyright © 2016 Kerry Toonen. All rights reserved.
 //
 
+#import "Lesson.h"
+#import "Question.h"
 #import <UIKit/UIKit.h>
 
 @interface LessonTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UILabel *Lesson;
-@property (strong, nonatomic) IBOutlet UILabel *mEnd1;
-@property (strong, nonatomic) IBOutlet UILabel *mEnd2;
-@property (strong, nonatomic) IBOutlet UILabel *mEnd3;
-@property (strong, nonatomic) IBOutlet UILabel *mEnd4;
-@property (strong, nonatomic) IBOutlet UILabel *fEnd1;
-@property (strong, nonatomic) IBOutlet UILabel *fEnd2;
+@property (strong, nonatomic) Lesson* lessonObject;
+@property (nonatomic,strong) NSArray *questions;
+@property (nonatomic, strong) NSMutableArray *questionArrayChange;
+
+- (IBAction)lessonSwitch:(UISwitch *)sender;
+
+
 
 
 @end
