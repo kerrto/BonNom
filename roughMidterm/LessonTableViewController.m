@@ -26,7 +26,7 @@
     JSONParse *json=[[JSONParse alloc]init];
     [json loadEndingQuestionWithJSON];
     self.lessonArray=json.lessonsArray;
-    self.questionArray = json.questions;
+ 
     
     
 }
@@ -35,24 +35,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//
-//-(void)removeQuestions {
-//    
-//   
-//    BOOL lessonSwitchOn=self.cell.lessonSwitch.on;
-//    
-//    if (!lessonSwitchOn) {
-//        JSONParse *jp=[[JSONParse alloc]init];
-//          Lesson *lesson=self.lessonArray[indexPath.row];
-//        for (Question *question in jp.questions) {
-//            if ([lesson.name isEqualToString:question.lesson]) {
-//                [jp.questions removeObject:question];
-//            }
-//            
-//            
-//        }
-//    }}
-
 
 
 #pragma mark - Table view data source

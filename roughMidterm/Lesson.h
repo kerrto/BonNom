@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSMutableArray *masculin;
 @property (nonatomic, strong) NSMutableArray *feminin;
 
-@property (nonatomic, strong) NSMutableArray *questions;
+
 
 
 @end

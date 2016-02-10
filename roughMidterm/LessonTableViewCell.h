@@ -12,8 +12,7 @@
 
 @interface LessonTableViewCell : UITableViewCell
 @property (strong, nonatomic) Lesson* lessonObject;
-@property (nonatomic,strong) NSArray *questions;
-@property (nonatomic, strong) NSMutableArray *questionArrayChange;
+
 
 - (IBAction)lessonSwitch:(UISwitch *)sender;
 

@@ -16,7 +16,7 @@
     if (self) {
         _feminin = [[NSMutableArray alloc] init];
         _masculin = [[NSMutableArray alloc] init];
-        _questions = [[NSMutableArray alloc] init];
+       
     }
     return self;
 }

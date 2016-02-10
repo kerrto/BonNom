@@ -47,7 +47,7 @@
             currentLesson.name = lessonDictionary[@"name"];
             currentLesson.masculin= [[NSMutableArray alloc]init];
             currentLesson.feminin=[[NSMutableArray alloc]init];
-            currentLesson.questions=[[NSMutableArray alloc] init];
+
          
             
             NSArray *questionsArray = lessonDictionary[@"questions"];

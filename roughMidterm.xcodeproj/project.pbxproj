@@ -24,7 +24,6 @@
 		ABFA44D01C6A4EAC0053F585 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44CF1C6A4EAC0053F585 /* LessonTableViewCell.m */; };
 		ABFA44D31C6A53EF0053F585 /* JSONParse.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44D21C6A53EF0053F585 /* JSONParse.m */; };
 		ABFA44D61C6A64A10053F585 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44D51C6A64A10053F585 /* Lesson.m */; };
-		ABFA44DC1C6B7B700053F585 /* QuestionArray.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44DB1C6B7B700053F585 /* QuestionArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +74,6 @@
 		ABFA44D21C6A53EF0053F585 /* JSONParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParse.m; sourceTree = "<group>"; };
 		ABFA44D41C6A64A00053F585 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson.h; sourceTree = "<group>"; };
 		ABFA44D51C6A64A10053F585 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson.m; sourceTree = "<group>"; };
-		ABFA44DA1C6B7B700053F585 /* QuestionArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionArray.h; sourceTree = "<group>"; };
-		ABFA44DB1C6B7B700053F585 /* QuestionArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +136,6 @@
 				ABFA44D21C6A53EF0053F585 /* JSONParse.m */,
 				ABFA44CE1C6A4EAC0053F585 /* LessonTableViewCell.h */,
 				ABFA44CF1C6A4EAC0053F585 /* LessonTableViewCell.m */,
-				ABFA44DA1C6B7B700053F585 /* QuestionArray.h */,
-				ABFA44DB1C6B7B700053F585 /* QuestionArray.m */,
 				ABFA44CB1C6A4E7C0053F585 /* LessonTableViewController.h */,
 				ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */,
 				ABFA44D41C6A64A00053F585 /* Lesson.h */,
@@ -323,7 +318,6 @@
 				ABFA44D31C6A53EF0053F585 /* JSONParse.m in Sources */,
 				AB89A2511C64597000B9F46A /* AppDelegate.m in Sources */,
 				ABFA44CA1C69424D0053F585 /* Question.m in Sources */,
-				ABFA44DC1C6B7B700053F585 /* QuestionArray.m in Sources */,
 				ABFA44CD1C6A4E7C0053F585 /* LessonTableViewController.m in Sources */,
 				ABFA44D61C6A64A10053F585 /* Lesson.m in Sources */,
 				AB89A24E1C64597000B9F46A /* main.m in Sources */,
