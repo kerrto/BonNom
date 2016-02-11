@@ -115,6 +115,62 @@
 "lesson":"lesson2",
 "gender": "feminin"
 }
+]
+               },
+             
+             {
+             "name": "lesson3",
+             "questions":[
+                          
+                          {
+                          "end": "-ail",
+                          "words": ["epouvantail", "travail", "vitrail"],
+                          "exceptions": [],
+                          "lesson":"lesson3",
+                          "gender": "masculin"
+                          },
+                          
+                          {
+                          "end": "-euil",
+                          "words": ["seuil", "fauteuil"],
+                          "exceptions": [],
+                          "lesson":"lesson3",
+                          "gender": "masculin"
+                          },
+                          
+                          {
+                          "end": "-al",
+                          "words": ["cheval", "festival", "journal","mal","récital","signal"],
+                          "exceptions": [],
+                          "lesson":"lesson3",
+                          "gender": "masculin"
+                          },
+                          
+                          {
+                          "end": "-ain",
+                          "words": ["bain", "grain", "lendemain","pain","terrain","train"],
+                          "exceptions": ["main"],
+                          "lesson":"lesson3",
+                          "gender": "masculin"
+                          },
+                          
+                          {
+                          "end": "-aine",
+                          "words": ["douzaine", "haine", "laine", "marraine","migraine","semaine"],
+                          "exceptions": ["domaine","Maine"],
+                          "lesson":"lesson3",
+                          "gender": "feminin"
+                          },
+                          
+                          {
+                          "end": "-ande",
+                          "words": ["amande", "bande","commande","demande","viande"],
+                          "exceptions": [],
+                          "lesson":"lesson3",
+                          "gender": "feminin"
+                          }
+             
+             
 
 ]
 }
