@@ -12,6 +12,7 @@
 #import "Lesson.h"
 #import "JSONParse.h"
 #import "AppDelegate.h"
+#import <ChameleonFramework/Chameleon.h>
 
 
 @interface ViewController ()
@@ -45,8 +46,11 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (changeQuestionArray:) name:@"switch" object:nil];
     
+    self.view.backgroundColor = [UIColor flatGreenColorDark];
+    
 
-   
+   self.title = @"Quiz";
+//    self.tabBarItem.image =
   
    
     // Do any additional setup after loading the view, typically from a nib.
