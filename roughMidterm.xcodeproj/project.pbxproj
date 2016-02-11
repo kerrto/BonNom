@@ -18,6 +18,9 @@
 		AB89A26A1C64597000B9F46A /* roughMidtermTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB89A2691C64597000B9F46A /* roughMidtermTests.m */; };
 		AB89A2751C64597000B9F46A /* roughMidtermUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB89A2741C64597000B9F46A /* roughMidtermUITests.m */; };
 		ABAEC6581C6D0FD400950CE3 /* eiffel-tower-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6571C6D0FD400950CE3 /* eiffel-tower-hi.png */; };
+		ABAEC65C1C6D289E00950CE3 /* quizIcon1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC65B1C6D289E00950CE3 /* quizIcon1.png */; };
+		ABAEC65E1C6D293A00950CE3 /* yesnoicon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC65D1C6D293A00950CE3 /* yesnoicon.png */; };
+		ABAEC6641C6D31B100950CE3 /* blackboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6631C6D31B100950CE3 /* blackboard.png */; };
 		ABF88EE81C654DD20067C773 /* FrenchInfo in Resources */ = {isa = PBXBuildFile; fileRef = ABF88EE71C654DD20067C773 /* FrenchInfo */; };
 		ABFA44B61C6823A10053F585 /* extra data in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B51C6823A10053F585 /* extra data */; };
 		ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B71C6824BC0053F585 /* TestJSON.json */; };
@@ -71,6 +74,9 @@
 		AB89A2741C64597000B9F46A /* roughMidtermUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = roughMidtermUITests.m; sourceTree = "<group>"; };
 		AB89A2761C64597000B9F46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAEC6571C6D0FD400950CE3 /* eiffel-tower-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiffel-tower-hi.png"; sourceTree = "<group>"; };
+		ABAEC65B1C6D289E00950CE3 /* quizIcon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quizIcon1.png; sourceTree = "<group>"; };
+		ABAEC65D1C6D293A00950CE3 /* yesnoicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yesnoicon.png; sourceTree = "<group>"; };
+		ABAEC6631C6D31B100950CE3 /* blackboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackboard.png; sourceTree = "<group>"; };
 		ABF88EE71C654DD20067C773 /* FrenchInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FrenchInfo; sourceTree = "<group>"; };
 		ABFA44B51C6823A10053F585 /* extra data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "extra data"; sourceTree = "<group>"; };
 		ABFA44B71C6824BC0053F585 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
@@ -156,15 +162,18 @@
 				AB89A24F1C64597000B9F46A /* AppDelegate.h */,
 				AB89A2501C64597000B9F46A /* AppDelegate.m */,
 				AB89A2531C64597000B9F46A /* ViewController.m */,
+				ABAEC65D1C6D293A00950CE3 /* yesnoicon.png */,
 				AB89A2521C64597000B9F46A /* ViewController.h */,
 				ABFA44C81C69424D0053F585 /* Question.h */,
 				ABFA44C91C69424D0053F585 /* Question.m */,
 				ABFA44B71C6824BC0053F585 /* TestJSON.json */,
+				ABAEC6631C6D31B100950CE3 /* blackboard.png */,
 				AB89A2551C64597000B9F46A /* Main.storyboard */,
 				ABFA44D11C6A53EF0053F585 /* JSONParse.h */,
 				ABFA44D21C6A53EF0053F585 /* JSONParse.m */,
 				ABFA44CE1C6A4EAC0053F585 /* LessonTableViewCell.h */,
 				ABFA44CF1C6A4EAC0053F585 /* LessonTableViewCell.m */,
+				ABAEC65B1C6D289E00950CE3 /* quizIcon1.png */,
 				ABFA44CB1C6A4E7C0053F585 /* LessonTableViewController.h */,
 				ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */,
 				ABFA44D41C6A64A00053F585 /* Lesson.h */,
@@ -334,11 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */,
+				ABAEC65E1C6D293A00950CE3 /* yesnoicon.png in Resources */,
 				ABF88EE81C654DD20067C773 /* FrenchInfo in Resources */,
 				ABFA44B61C6823A10053F585 /* extra data in Resources */,
+				ABAEC65C1C6D289E00950CE3 /* quizIcon1.png in Resources */,
 				ABAEC6581C6D0FD400950CE3 /* eiffel-tower-hi.png in Resources */,
 				AB89A25F1C64597000B9F46A /* LaunchScreen.storyboard in Resources */,
 				AB89A25C1C64597000B9F46A /* Assets.xcassets in Resources */,
+				ABAEC6641C6D31B100950CE3 /* blackboard.png in Resources */,
 				AB89A2571C64597000B9F46A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

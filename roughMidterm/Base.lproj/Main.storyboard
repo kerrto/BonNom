@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="205"/>
+            <point key="canvasLocation" x="-592" y="993"/>
         </scene>
         <!--Lessons-->
         <scene sceneID="nQL-Om-8PI">
@@ -513,11 +513,11 @@
             </objects>
             <point key="canvasLocation" x="-214" y="205"/>
         </scene>
-        <!--Item-->
+        <!--Lessons-->
         <scene sceneID="T9a-Bu-LD6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rk6-N5-9Uc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iX4-vf-AWU"/>
+                <navigationController title="Lessons" automaticallyAdjustsScrollViewInsets="NO" id="rk6-N5-9Uc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lessons" image="blackboard.png" id="iX4-vf-AWU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wpi-yF-ffD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -533,4 +533,7 @@
             <point key="canvasLocation" x="150" y="865"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blackboard.png" width="58" height="58"/>
+    </resources>
 </document>

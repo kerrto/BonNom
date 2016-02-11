@@ -32,6 +32,15 @@
     
     self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:self.view.frame andColors:colors];
     
+    self.title = @"Lessons";
+    self.tabBarItem.image = [UIImage imageNamed:@"blackboard.png"];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source

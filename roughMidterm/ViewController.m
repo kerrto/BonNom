@@ -69,7 +69,7 @@
     self.femininButton.layer.cornerRadius = 10;
     self.masculinButton.clipsToBounds = YES;
     
-//    self.tabBarItem.image =
+    self.tabBarItem.image = [UIImage imageNamed:@"yesnoicon.png"];
   
 
 }

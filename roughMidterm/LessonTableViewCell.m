@@ -98,12 +98,20 @@
         }
         }
     NSInteger accuracy = (float) (correctAnswerArray.count)/(results.count)*100;
+    NSString *accuracyString=[@(accuracy) stringValue];
+    
+    if ((long)accuracy<0) {
+       accuracyString=@"0";
+    }
     
     NSLog(@"%ld",(long)accuracy);
     
-    NSString *accuracyString=[@(accuracy) stringValue];
+    NSString *percentString=@"%";
     
-    self.scoreLabel.text=accuracyString;
+    NSString *scoreLabelString=[accuracyString stringByAppendingString:percentString];
+    
+    self.scoreLabel.text=scoreLabelString;
+    
 }
 
 
