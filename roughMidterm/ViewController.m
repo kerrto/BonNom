@@ -27,6 +27,8 @@
 @property (strong, nonatomic) IBOutlet UISwitch *wordSwitch;
 @property (strong, nonatomic) IBOutlet UISwitch *exceptionSwitch;
 @property (strong, nonatomic) NSMutableArray *mixQuestionArray;
+@property (strong, nonatomic) IBOutlet UIButton *masculinButton;
+@property (strong, nonatomic) IBOutlet UIButton *femininButton;
 
 - (IBAction)masculinButton:(id)sender;
 - (IBAction)femininButton:(id)sender;
@@ -46,14 +48,22 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (changeQuestionArray:) name:@"switch" object:nil];
     
-    self.view.backgroundColor = [UIColor flatGreenColorDark];
+    NSArray *colors = @[[UIColor flatSkyBlueColor], [UIColor flatSkyBlueColorDark]];
+    
+    self.view.backgroundColor = [UIColor colorWithGradientStyle:(UIGradientStyle)UIGradientStyleTopToBottom withFrame:self.view.frame andColors:colors];
     
 
    self.title = @"Quiz";
+    
+    self.masculinButton.layer.cornerRadius = 10; // this value vary as per your desire
+    self.masculinButton.clipsToBounds = YES;
+    
+    self.femininButton.layer.cornerRadius = 10;
+    self.masculinButton.clipsToBounds = YES;
+    
 //    self.tabBarItem.image =
   
-   
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning
