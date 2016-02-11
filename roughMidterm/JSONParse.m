@@ -24,8 +24,6 @@
 }
 
 
-
-
 -(void)loadEndingQuestionWithJSON
 {
     NSString *jsonPath =[[NSBundle mainBundle] pathForResource:@"TestJSON" ofType:@"json"];

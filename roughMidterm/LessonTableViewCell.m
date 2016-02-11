@@ -12,8 +12,11 @@
 #import "Lesson.h"
 #import "LessonTableViewController.h"
 #import "ViewController.h"
+#import "AppDelegate.h"
+#import "Answer+CoreDataProperties.h"
 
-@interface LessonTableViewCell()
+@interface LessonTableViewCell()<NSFetchedResultsControllerDelegate>
+
 @property (strong, nonatomic) IBOutlet UILabel *Lesson;
 @property (strong, nonatomic) IBOutlet UILabel *mEnd1;
 @property (strong, nonatomic) IBOutlet UILabel *mEnd2;
@@ -21,6 +24,13 @@
 @property (strong, nonatomic) IBOutlet UILabel *mEnd4;
 @property (strong, nonatomic) IBOutlet UILabel *fEnd1;
 @property (strong, nonatomic) IBOutlet UILabel *fEnd2;
+@property (strong, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (strong, nonatomic) NSFetchedResultsController* fetchedResultsController;
+
+
+
+
+
 @end
 
 @implementation LessonTableViewCell
@@ -45,12 +55,55 @@
     self.mEnd4.text=[lessonObject.masculin objectAtIndex:3];
     self.fEnd1.text=[lessonObject.feminin objectAtIndex:0];
     self.fEnd2.text=[lessonObject.feminin objectAtIndex:1];
+    [self updateScoreLabel];
 }
 
 
 - (IBAction)lessonSwitch:(UISwitch*)sender {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"switch" object:self userInfo:@{@"lessonObject":self.lessonObject,@"switchState":@(sender.on)}];
 }
+
+
+-(void)updateScoreLabel {
+    
+    AppDelegate *del = [UIApplication sharedApplication].delegate;
+    
+    NSManagedObjectContext *managedObjectContext=del.managedObjectContext;
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Answer"];
+    
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"lesson = %@", self.lessonObject.name];
+    
+        request.predicate = predicate;
+    
+    NSLog(@"%@",predicate);
+    
+    NSError *error = nil;
+    NSArray *results = [managedObjectContext executeFetchRequest:request error:&error];
+    if (!results) {
+        NSLog(@"%@",results);
+        NSLog(@"Error fetching Answer objects: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+        }
+    
+    NSMutableArray *correctAnswerArray=[[NSMutableArray alloc]init];
+   
+    
+    for (Answer *answer in results) {
+      
+        if ([answer.correct isEqualToNumber:@(1)]) {
+            [correctAnswerArray addObject:answer];
+        }
+        }
+    NSInteger accuracy = (float) (correctAnswerArray.count)/(results.count)*100;
+    
+    NSLog(@"%ld",(long)accuracy);
+    
+    NSString *accuracyString=[@(accuracy) stringValue];
+    
+    self.scoreLabel.text=accuracyString;
+}
+
 
 
 @end

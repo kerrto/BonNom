@@ -11,6 +11,7 @@
 #import "LessonTableViewController.h"
 #import "Lesson.h"
 #import "JSONParse.h"
+#import "AppDelegate.h"
 
 
 @interface ViewController ()
@@ -156,22 +157,26 @@
     if (containsException && isMasculin)
     {
          self.correctLabel.text=@"Non! This is an exception! It's feminin";
+        [self saveAnswerEntryForIncorrect];
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
     }
     if (containsException && isFeminin)
     {
         self.correctLabel.text=@"Oui!!!";
+        [self saveAnswerEntryForCorrect];
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     
     if (!containsException && isMasculin)
     {
         self.correctLabel.text=@"Oui!!!";
+        [self saveAnswerEntryForCorrect];
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     if (!containsException && isFeminin)
     {
         self.correctLabel.text=@"Non!!!";
+        [self saveAnswerEntryForIncorrect];
          [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
   
@@ -187,22 +192,26 @@
     if (containsException && isFeminin)
     {
         self.correctLabel.text=@"Non! This is an exception! It's masculin";
+        [self saveAnswerEntryForIncorrect];
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
     }
     
     if (containsException && isMasculin)
     {
             self.correctLabel.text=@"Oui!!!";
+            [self saveAnswerEntryForCorrect];
             [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     if (!containsException && isFeminin)
     {
         self.correctLabel.text=@"Oui!!!";
+        [self saveAnswerEntryForCorrect];
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     if (!containsException && isMasculin)
     {
     self.correctLabel.text=@"Non!!!";
+        [self saveAnswerEntryForIncorrect];
     [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
 }
@@ -219,10 +228,6 @@
     Lesson *lesson=notification.userInfo[@"lessonObject"];
     
     BOOL switchState = [notification.userInfo[@"switchState"] boolValue];
-    
-   
-    
-
     
     if (switchState) {
         for (Question * question in self.allQuestions)
@@ -245,6 +250,43 @@
     }
     NSLog(@"%lu",self.questionArray.count);
 }
+
+-(void)saveAnswerEntryForCorrect
+{
+    AppDelegate *del = [UIApplication sharedApplication].delegate;
+    
+    NSManagedObjectContext *managedObjectContext=del.managedObjectContext;
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Answer" inManagedObjectContext:managedObjectContext];
+    NSManagedObject *newAnswer = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:managedObjectContext];
+    
+    [newAnswer setValue:self.currentQuestion.ending forKey:@"question"];
+    [newAnswer setValue:self.currentQuestion.lesson forKey:@"lesson"];
+    [newAnswer setValue:[NSDate date]  forKey:@"date"];
+    [newAnswer setValue:@(1) forKey: @"correct"];
+    
+    [del saveContext];
+}
+
+-(void)saveAnswerEntryForIncorrect
+{
+    AppDelegate *del = [UIApplication sharedApplication].delegate;
+    
+    NSManagedObjectContext *managedObjectContext=del.managedObjectContext;
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Answer" inManagedObjectContext:managedObjectContext];
+    NSManagedObject *newAnswer = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:managedObjectContext];
+    
+    [newAnswer setValue:self.currentQuestion.ending forKey:@"question"];
+    [newAnswer setValue:self.currentQuestion.lesson forKey:@"lesson"];
+    [newAnswer setValue:[NSDate date]  forKey:@"date"];
+    [newAnswer setValue:@(0) forKey: @"correct"];
+    
+    
+    
+    [del saveContext];
+}
+
 
 
      

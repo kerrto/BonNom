@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 #import "LessonTableViewCell.h"
 
 
@@ -15,6 +16,7 @@
 
 @property (strong, nonatomic) NSMutableArray *questionArray;
 @property (copy, nonatomic) NSArray *allQuestions;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 
 

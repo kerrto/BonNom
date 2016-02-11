@@ -119,11 +119,11 @@
             </objects>
             <point key="canvasLocation" x="963" y="211"/>
         </scene>
-        <!--Item-->
+        <!--Lessons-->
         <scene sceneID="nQL-Om-8PI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNY-dv-Wcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="Cna-Gt-LUx" customClass="LessonTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Lessons" id="Cna-Gt-LUx" customClass="LessonTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="202" sectionHeaderHeight="28" sectionFooterHeight="28" id="cct-aO-B4f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,6 +212,7 @@
                                     <outlet property="mEnd2" destination="ksQ-w4-Axt" id="BM9-mn-wJb"/>
                                     <outlet property="mEnd3" destination="dqL-sD-ck6" id="aF6-GK-ug3"/>
                                     <outlet property="mEnd4" destination="uy4-j4-qY0" id="ywJ-pJ-GCy"/>
+                                    <outlet property="scoreLabel" destination="Nqs-Lp-rkE" id="1Hi-MZ-B0o"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

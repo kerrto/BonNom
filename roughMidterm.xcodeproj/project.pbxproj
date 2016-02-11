@@ -24,6 +24,8 @@
 		ABFA44D01C6A4EAC0053F585 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44CF1C6A4EAC0053F585 /* LessonTableViewCell.m */; };
 		ABFA44D31C6A53EF0053F585 /* JSONParse.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44D21C6A53EF0053F585 /* JSONParse.m */; };
 		ABFA44D61C6A64A10053F585 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44D51C6A64A10053F585 /* Lesson.m */; };
+		ABFA44E11C6BF3E60053F585 /* Answer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44DE1C6BF3E60053F585 /* Answer+CoreDataProperties.m */; };
+		ABFA44E21C6BF3E60053F585 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44E01C6BF3E60053F585 /* Answer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,10 @@
 		ABFA44D21C6A53EF0053F585 /* JSONParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParse.m; sourceTree = "<group>"; };
 		ABFA44D41C6A64A00053F585 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson.h; sourceTree = "<group>"; };
 		ABFA44D51C6A64A10053F585 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson.m; sourceTree = "<group>"; };
+		ABFA44DD1C6BF3E60053F585 /* Answer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Answer+CoreDataProperties.h"; path = "../Answer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ABFA44DE1C6BF3E60053F585 /* Answer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Answer+CoreDataProperties.m"; path = "../Answer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ABFA44DF1C6BF3E60053F585 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Answer.h; path = ../Answer.h; sourceTree = "<group>"; };
+		ABFA44E01C6BF3E60053F585 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Answer.m; path = ../Answer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,10 @@
 				ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */,
 				ABFA44D41C6A64A00053F585 /* Lesson.h */,
 				ABFA44D51C6A64A10053F585 /* Lesson.m */,
+				ABFA44DD1C6BF3E60053F585 /* Answer+CoreDataProperties.h */,
+				ABFA44DE1C6BF3E60053F585 /* Answer+CoreDataProperties.m */,
+				ABFA44DF1C6BF3E60053F585 /* Answer.h */,
+				ABFA44E01C6BF3E60053F585 /* Answer.m */,
 				AB89A25B1C64597000B9F46A /* Assets.xcassets */,
 				AB89A25D1C64597000B9F46A /* LaunchScreen.storyboard */,
 				AB89A2601C64597000B9F46A /* Info.plist */,
@@ -319,9 +329,11 @@
 				AB89A2511C64597000B9F46A /* AppDelegate.m in Sources */,
 				ABFA44CA1C69424D0053F585 /* Question.m in Sources */,
 				ABFA44CD1C6A4E7C0053F585 /* LessonTableViewController.m in Sources */,
+				ABFA44E21C6BF3E60053F585 /* Answer.m in Sources */,
 				ABFA44D61C6A64A10053F585 /* Lesson.m in Sources */,
 				AB89A24E1C64597000B9F46A /* main.m in Sources */,
 				ABFA44D01C6A4EAC0053F585 /* LessonTableViewCell.m in Sources */,
+				ABFA44E11C6BF3E60053F585 /* Answer+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
