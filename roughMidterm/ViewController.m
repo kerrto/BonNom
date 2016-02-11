@@ -55,7 +55,7 @@
 
    self.title = @"Quiz";
     
-    self.masculinButton.layer.cornerRadius = 10; // this value vary as per your desire
+    self.masculinButton.layer.cornerRadius = 10;
     self.masculinButton.clipsToBounds = YES;
     
     self.femininButton.layer.cornerRadius = 10;
