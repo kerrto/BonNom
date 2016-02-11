@@ -22,12 +22,9 @@
     [super viewDidLoad];
     [self findQuestionsForLesson];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
+        NSArray *colors = @[[UIColor flatSkyBlueColor], [UIColor flatSkyBlueColorDark]];
+        
+        self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:self.view.frame andColors:colors];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -35,6 +32,15 @@
 }
 
 #pragma mark - Table view data source
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSArray *colors = @[[UIColor flatSkyBlueColor], [UIColor flatSkyBlueColorDark]];
+    
+    cell.contentView.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:cell.frame andColors:colors];
+    
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
@@ -67,6 +73,7 @@
     
     
     cell.exceptionsLabel.text = exceptionsString;
+    
 
     return cell;
 }

@@ -17,6 +17,7 @@
 		AB89A25F1C64597000B9F46A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB89A25D1C64597000B9F46A /* LaunchScreen.storyboard */; };
 		AB89A26A1C64597000B9F46A /* roughMidtermTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB89A2691C64597000B9F46A /* roughMidtermTests.m */; };
 		AB89A2751C64597000B9F46A /* roughMidtermUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB89A2741C64597000B9F46A /* roughMidtermUITests.m */; };
+		ABAEC6581C6D0FD400950CE3 /* eiffel-tower-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6571C6D0FD400950CE3 /* eiffel-tower-hi.png */; };
 		ABF88EE81C654DD20067C773 /* FrenchInfo in Resources */ = {isa = PBXBuildFile; fileRef = ABF88EE71C654DD20067C773 /* FrenchInfo */; };
 		ABFA44B61C6823A10053F585 /* extra data in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B51C6823A10053F585 /* extra data */; };
 		ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B71C6824BC0053F585 /* TestJSON.json */; };
@@ -69,6 +70,7 @@
 		AB89A2701C64597000B9F46A /* roughMidtermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roughMidtermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB89A2741C64597000B9F46A /* roughMidtermUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = roughMidtermUITests.m; sourceTree = "<group>"; };
 		AB89A2761C64597000B9F46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAEC6571C6D0FD400950CE3 /* eiffel-tower-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiffel-tower-hi.png"; sourceTree = "<group>"; };
 		ABF88EE71C654DD20067C773 /* FrenchInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FrenchInfo; sourceTree = "<group>"; };
 		ABFA44B51C6823A10053F585 /* extra data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "extra data"; sourceTree = "<group>"; };
 		ABFA44B71C6824BC0053F585 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				ABFA44EC1C6CE0BB0053F585 /* DetailVCCell.h */,
 				ABFA44ED1C6CE0BB0053F585 /* DetailVCCell.m */,
 				AB89A25B1C64597000B9F46A /* Assets.xcassets */,
+				ABAEC6571C6D0FD400950CE3 /* eiffel-tower-hi.png */,
 				AB89A25D1C64597000B9F46A /* LaunchScreen.storyboard */,
 				AB89A2601C64597000B9F46A /* Info.plist */,
 				AB89A2581C64597000B9F46A /* roughMidterm.xcdatamodeld */,
@@ -333,6 +336,7 @@
 				ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */,
 				ABF88EE81C654DD20067C773 /* FrenchInfo in Resources */,
 				ABFA44B61C6823A10053F585 /* extra data in Resources */,
+				ABAEC6581C6D0FD400950CE3 /* eiffel-tower-hi.png in Resources */,
 				AB89A25F1C64597000B9F46A /* LaunchScreen.storyboard in Resources */,
 				AB89A25C1C64597000B9F46A /* Assets.xcassets in Resources */,
 				AB89A2571C64597000B9F46A /* Main.storyboard in Resources */,

@@ -15,6 +15,7 @@
 #import "AppDelegate.h"
 #import "Answer+CoreDataProperties.h"
 
+
 @interface LessonTableViewCell()<NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *Lesson;
@@ -56,6 +57,7 @@
     self.fEnd1.text=[lessonObject.feminin objectAtIndex:0];
     self.fEnd2.text=[lessonObject.feminin objectAtIndex:1];
     [self updateScoreLabel];
+    
 }
 
 

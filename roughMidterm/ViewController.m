@@ -5,14 +5,14 @@
 //  Created by Kerry Toonen on 2016-02-04.
 //  Copyright © 2016 Kerry Toonen. All rights reserved.
 //
-
+#import <ChameleonFramework/Chameleon.h>
 #import "ViewController.h"
 #import "Question.h"
 #import "LessonTableViewController.h"
 #import "Lesson.h"
 #import "JSONParse.h"
 #import "AppDelegate.h"
-#import <ChameleonFramework/Chameleon.h>
+
 
 
 @interface ViewController ()
@@ -29,6 +29,7 @@
 @property (strong, nonatomic) NSMutableArray *mixQuestionArray;
 @property (strong, nonatomic) IBOutlet UIButton *masculinButton;
 @property (strong, nonatomic) IBOutlet UIButton *femininButton;
+@property (strong, nonatomic) IBOutlet UIImageView *eiffelTower;
 
 - (IBAction)masculinButton:(id)sender;
 - (IBAction)femininButton:(id)sender;
@@ -51,6 +52,13 @@
     NSArray *colors = @[[UIColor flatSkyBlueColor], [UIColor flatSkyBlueColorDark]];
     
     self.view.backgroundColor = [UIColor colorWithGradientStyle:(UIGradientStyle)UIGradientStyleTopToBottom withFrame:self.view.frame andColors:colors];
+    
+    self.correctLabel.textColor=[UIColor flatYellowColor];
+    
+    self.questionLabel.layer.cornerRadius=10;
+    self.questionLabel.clipsToBounds = YES;
+    
+    self.eiffelTower.image=[UIImage imageNamed:@"eiffel-tower-hi.png"];
     
 
    self.title = @"Quiz";
@@ -80,7 +88,8 @@
       
   {
         
-    self.correctLabel.text = @"You have to toggle a lesson (see next page)";
+    self.correctLabel.text = @"You have to toggle a lesson";
+      self.correctLabel.textColor=[UIColor flatYellowColor];
       
       [self.mixQuestionArray removeAllObjects];
         
@@ -170,7 +179,9 @@
     
     if (containsException && isMasculin)
     {
-         self.correctLabel.text=@"Non! This is an exception! It's feminin";
+         self.correctLabel.text=@"Non! This is an exception!";
+      
+        
         [self saveAnswerEntryForIncorrect];
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
     }
@@ -191,6 +202,7 @@
     {
         self.correctLabel.text=@"Non!!!";
         [self saveAnswerEntryForIncorrect];
+      
          [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
   
@@ -205,7 +217,7 @@
     
     if (containsException && isFeminin)
     {
-        self.correctLabel.text=@"Non! This is an exception! It's masculin";
+        self.correctLabel.text=@"Non! This is an exception!";
         [self saveAnswerEntryForIncorrect];
         [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
     }

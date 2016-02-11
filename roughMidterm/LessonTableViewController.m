@@ -5,7 +5,7 @@
 //  Created by Kerry Toonen on 2016-02-09.
 //  Copyright © 2016 Kerry Toonen. All rights reserved.
 //
-
+#import <ChameleonFramework/Chameleon.h>
 #import "LessonTableViewController.h"
 #import "LessonTableViewCell.h"
 #import "Question.h"
@@ -28,11 +28,21 @@
     [json loadEndingQuestionWithJSON];
     self.lessonArray=json.lessonsArray;
  
+    NSArray *colors = @[[UIColor flatSkyBlueColor], [UIColor flatSkyBlueColorDark]];
     
+    self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:self.view.frame andColors:colors];
     
 }
 
 #pragma mark - Table view data source
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSArray *colors = @[[UIColor flatSkyBlueColor], [UIColor flatSkyBlueColorDark]];
+    
+    cell.contentView.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:cell.frame andColors:colors];
+    
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -45,8 +55,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     self.cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    Lesson *lesson=self.lessonArray[indexPath.row];    
+    Lesson *lesson=self.lessonArray[indexPath.row];
+    
     self.cell.lessonObject = lesson;
+    
+    
     
     return self.cell;
 }
