@@ -183,7 +183,7 @@
       
         
         [self saveAnswerEntryForIncorrect];
-        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
+        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     if (containsException && isFeminin)
     {
@@ -219,7 +219,7 @@
     {
         self.correctLabel.text=@"Non! This is an exception!";
         [self saveAnswerEntryForIncorrect];
-        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:2];
+        [self performSelector:@selector(resetLabels) withObject:nil afterDelay:1];
     }
     
     if (containsException && isMasculin)
