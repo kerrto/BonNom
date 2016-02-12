@@ -65,14 +65,17 @@
     cell.endingLabel.text = cellQuestion.ending;
     cell.genderLabel.text = cellQuestion.gender;
     
-    NSString *wordsString = [cellQuestion.words componentsJoinedByString:@","];
+    NSString *wordsString = [cellQuestion.words componentsJoinedByString:@", "];
     
     cell.wordsLabel.text=wordsString;
     
-     NSString *exceptionsString = [cellQuestion.exceptions componentsJoinedByString:@","];
+     NSString *exceptionsString = [cellQuestion.exceptions componentsJoinedByString:@", "];
     
     
     cell.exceptionsLabel.text = exceptionsString;
+    
+    cell.exceptionsLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    
     
 
     return cell;

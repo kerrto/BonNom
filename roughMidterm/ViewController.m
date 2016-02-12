@@ -274,7 +274,6 @@
             }
         }
     }
-    NSLog(@"%lu",self.questionArray.count);
 }
 
 -(void)saveAnswerEntryForCorrect

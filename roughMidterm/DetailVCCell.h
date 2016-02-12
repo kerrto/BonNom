@@ -11,7 +11,8 @@
 @interface DetailVCCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *endingLabel;
 @property (strong, nonatomic) IBOutlet UILabel *genderLabel;
-@property (strong, nonatomic) IBOutlet UITextView *wordsLabel;
-@property (strong, nonatomic) IBOutlet UITextView *exceptionsLabel;
 
+@property (strong, nonatomic) IBOutlet UILabel *wordsLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *exceptionsLabel;
 @end

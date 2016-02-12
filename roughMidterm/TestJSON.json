@@ -173,7 +173,186 @@
              
 
 ]
-}
+},
+            
+               {
+               "name": "lesson4",
+               "questions":[
+                            
+                            {
+                            "end": "-ement",
+                            "words": ["branchement", "département", "jugement","réchauffement"],
+                            "exceptions": [],
+                            "lesson":"lesson4",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ament",
+                            "words": ["testament", "médicament"],
+                            "exceptions": [],
+                            "lesson":"lesson4",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ard",
+                            "words": ["canard", "guépard", "placard","regard","renard","viellard"],
+                            "exceptions": [],
+                            "lesson":"lesson4",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-el",
+                            "words": ["appel", "caremel", "logiciel","materiél","sel"],
+                            "exceptions": [],
+                            "lesson":"lesson4",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ence",
+                            "words": ["urgence", "présidence","violence"],
+                            "exceptions": ["silence"],
+                            "lesson":"lesson4",
+                            "gender": "feminin"
+                            },
+                            
+                            {
+                            "end": "-ance",
+                            "words": ["chance", "indépendance","puissance"],
+                            "exceptions": [],
+                            "lesson":"lesson4",
+                            "gender": "feminin"
+                            }
+                            
+                            
+                            
+                            ]
+               },
+               
+               {
+               "name": "lesson5",
+               "questions":[
+                            
+                            {
+                            "end": "-er",
+                            "words": ["boulanger", "danger", "déjeuner","fer","passager","verger"],
+                            "exceptions": [],
+                            "lesson":"lesson5",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-yer,-ier",
+                            "words": ["loyer", "calendrier","clavier","fichier","tablier","voilier"],
+                            "exceptions": [],
+                            "lesson":"lesson5",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-eur",
+                            "words": ["aspirateur", "climatiseur", "coeur","compositeur","ordinateur","réfrigérateur"],
+                            "exceptions": [],
+                            "lesson":"lesson5",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ien",
+                            "words": ["bien", "chien", "entretien","italien","lien","végetérien"],
+                            "exceptions": [],
+                            "lesson":"lesson5",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ée",
+                            "words": ["anée","araignée","bouée","durée","idée","journée"],
+                            "exceptions": ["apogée","athée","colisée","lycée","mausolée","musée","rez-de-chausée","trophée"],
+                            "lesson":"lesson5",
+                            "gender": "feminin"
+                            },
+                            
+                            {
+                            "end": "-ette",
+                            "words": ["assiette", "dette","devinette","fourchette","noisette","serviette"],
+                            "exceptions": ["bébé-éprouvette","casse-noiette","porte-serviette","quartette","quinette","squelette"],
+                            "lesson":"lesson5",
+                            "gender": "feminin"
+                            }
+                            
+                            ]
+               },
+       
+               
+               {
+               "name": "lesson6",
+               "questions":[
+                            
+                            {
+                            "end": "-illon",
+                            "words": ["bouillon", "grillon", "brouillon","échantillon","grillon","papillon","tourbillon"],
+                            "exceptions": [],
+                            "lesson":"lesson6",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-in",
+                            "words": ["chagrin", "dessin","jardin","moulin","vin"],
+                            "exceptions": ["fin"],
+                            "lesson":"lesson6",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-is",
+                            "words": ["compromis", "croiquis", "devis","fouillis","taudis","tennis"],
+                            "exceptions": ["souris","vis"],
+                            "lesson":"lesson6",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-isme",
+                            "words": ["égoïsme", "héroisme", "optimisme","romantisme","séisme","socialisme"],
+                            "exceptions": [],
+                            "lesson":"lesson5",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-esse",
+                            "words": ["jeunesse","politesse","sagesse"],
+                            "exceptions": [],
+                            "lesson":"lesson5",
+                            "gender": "feminin"
+                            },
+                            
+                            {
+                            "end": "-osse/-ousse",
+                            "words": ["brosse", "housse","trousse"],
+                            "exceptions": ["carrosse","pamplemousse"],
+                            "lesson":"lesson5",
+                            "gender": "feminin"
+                            }
+                        ]
+               }
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
 ]
 }
 
