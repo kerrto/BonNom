@@ -30,14 +30,13 @@
 
 
 
-
-
 @end
 
 @implementation LessonTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.Lesson.layer.cornerRadius=10;
+    self.Lesson.clipsToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -163,9 +163,9 @@
                           },
                           
                           {
-                          "end": "-ande",
-                          "words": ["amande", "bande","commande","demande","viande"],
-                          "exceptions": [],
+                          "end": "-aille",
+                          "words": ["bataille", "écaille","faille","médaille","paille","taille"],
+                          "exceptions": ["braille"],
                           "lesson":"lesson3",
                           "gender": "feminin"
                           }
@@ -253,8 +253,8 @@
                             },
                             
                             {
-                            "end": "-eur",
-                            "words": ["aspirateur", "climatiseur", "coeur","compositeur","ordinateur","réfrigérateur"],
+                            "end": "-as",
+                            "words": ["bras", "cadenas", "cas","embarrass","fracas","lilas","metelas","pas","repas","verglas"],
                             "exceptions": [],
                             "lesson":"lesson5",
                             "gender": "masculin"
@@ -320,7 +320,7 @@
                             "end": "-isme",
                             "words": ["égoïsme", "héroisme", "optimisme","romantisme","séisme","socialisme"],
                             "exceptions": [],
-                            "lesson":"lesson5",
+                            "lesson":"lesson6",
                             "gender": "masculin"
                             },
                             
@@ -328,7 +328,7 @@
                             "end": "-esse",
                             "words": ["jeunesse","politesse","sagesse"],
                             "exceptions": [],
-                            "lesson":"lesson5",
+                            "lesson":"lesson6",
                             "gender": "feminin"
                             },
                             
@@ -336,23 +336,177 @@
                             "end": "-osse/-ousse",
                             "words": ["brosse", "housse","trousse"],
                             "exceptions": ["carrosse","pamplemousse"],
-                            "lesson":"lesson5",
+                            "lesson":"lesson6",
                             "gender": "feminin"
                             }
                         ]
+               },
+               
+               {
+               "name": "lesson7",
+               "questions":[
+                            
+                            {
+                            "end": "-oir",
+                            "words": ["couloir", "miroir", "trattoir"],
+                            "exceptions": [],
+                            "lesson":"lesson7",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-oin",
+                            "words": ["besoin", "coin","témoin"],
+                            "exceptions": [],
+                            "lesson":"lesson7",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-om",
+                            "words": ["prenom", "nom"],
+                            "exceptions": [],
+                            "lesson":"lesson7",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-a",
+                            "words": ["agenda", "bégonia", "brouhaha","choléra","pyjama","cinéma","visa","opéra"],
+                            "exceptions": ["diva","saga","villa","polka","véranda"],
+                            "lesson":"lesson7",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ie",
+                            "words": ["magie","thérapie","poésie","tapisserie","utopie","vie"],
+                            "exceptions": ["génie","incendie","messie","parapluie","sosie","zombie"],
+                            "lesson":"lesson7",
+                            "gender": "feminin"
+                            },
+                            
+                            {
+                            "end": "-ise",
+                            "words": ["cerise","chemise","crise","gourmandise","surprise","valise"],
+                            "exceptions": [],
+                            "lesson":"lesson7",
+                            "gender": "feminin"
+                            }
+                            ]
+               },
+               
+               {
+               "name": "lesson8",
+               "questions":[
+                            
+                            {
+                            "end": "-me",
+                            "words": ["dôme", "idiome", "poème","problème","royaume","spasme","terme"],
+                            "exceptions": [],
+                            "lesson":"lesson8",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-k,-c",
+                            "words": ["ammoniac", "aqueduc","armagnac","basilic","bivouac","bloc","clic","croc","diagnostic","duc","fric","hamac","kayak","lac","public","stuc","tabac","trafic","troc","viaduc"],
+                            "exceptions": [],
+                            "lesson":"lesson8",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-g",
+                            "words": ["etang","faubourg","joug","rang","sang"],
+                            "exceptions": [],
+                            "lesson":"lesson8",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-re",
+                            "words": ["centre", "feutre", "filtre","lustre","maïtre","mètre","ventre"],
+                            "exceptions": ["fenêtre","lettre","vitre","huître","montre"],
+                            "lesson":"lesson8",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ande",
+                            "words": ["amande", "bande","commande","demande","viande"],
+                            "exceptions": [],
+                            "lesson":"lesson8",
+                            "gender": "feminin"
+                            },
+                            
+                            {
+                            "end": "-ille",
+                            "words": ["brindille","famille","fille","lintille","mytrille","vanille"],
+                            "exceptions": ["gorille","quadrille","vaudeville"],
+                            "lesson":"lesson8",
+                            "gender": "feminin"
+                            }
+                            ]
+               },
+               
+               {
+               "name": "lesson9",
+               "questions":[
+                            
+                            {
+                            "end": "-x,-xe",
+                            "words": ["axe", "circonflexe", "complexe","équinoxe","flux","inox","juke-box","larynx","luxe","lynx"],
+                            "exceptions": ["boxe","syntaxe","taxe"],
+                            "lesson":"lesson9",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-phone",
+                            "words": ["magnétophone", "mégaphone","microphone","saxophone","téléphone"],
+                            "exceptions": [],
+                            "lesson":"lesson9",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-scope",
+                            "words": ["horoscope","microscope","téléscope","trombinoscope"],
+                            "exceptions": [],
+                            "lesson":"lesson9",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ble",
+                            "words": ["sable", "câble"],
+                            "exceptions": ["fable","table"],
+                            "lesson":"lesson9",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ion",
+                            "words": ["connexion", "génération","comprehension","opinion","passion"],
+                            "exceptions": ["avion","champion","bastion"],
+                            "lesson":"lesson9",
+                            "gender": "feminin"
+                            },
+                            
+                            {
+                            "end": "-ite",
+                            "words": ["appendicite","conduite","élite","limite","marguerite","réussite"],
+                            "exceptions": ["anthracite","gîte","insolite","mérite","rite","satellite","site","sulfite","termite"],
+                            "lesson":"lesson9",
+                            "gender": "feminin"
+                            }
+                            ]
                }
                
                
                
-               
-               
-               
-               
-               
-               
-               
-               
-               
+
 ]
 }
 

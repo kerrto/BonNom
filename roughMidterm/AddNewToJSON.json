@@ -1,0 +1,53 @@
+{
+    "name": "lesson9",
+    "questions":[
+                 
+                 {
+                 "end": "-x,-xe",
+                 "words": ["axe", "circonflexe", "complexe","équinoxe","flux","inox","juke-box","larynx","luxe","lynx","paradoxe","sexe"],
+                 "exceptions": ["boxe","syntaxe","taxe"],
+                 "lesson":"lesson9",
+                 "gender": "masculin"
+                 },
+                 
+                 {
+                 "end": "-phone",
+                 "words": ["magnétophone", "mégaphone","microphone","saxophone","téléphone","xylophone"],
+                 "exceptions": [],
+                 "lesson":"lesson9",
+                 "gender": "masculin"
+                 },
+                 
+                 {
+                 "end": "-scope",
+                 "words": ["horoscope","microscope","téléscope","trombinoscope","kaléidoscope","magnétoscope"],
+                 "exceptions": [],
+                 "lesson":"lesson9",
+                 "gender": "masculin"
+                 },
+                 
+                 {
+                 "end": "-ble",
+                 "words": ["sable", "câble"],
+                 "exceptions": ["fable","table"],
+                 "lesson":"lesson9",
+                 "gender": "masculin"
+                 },
+                 
+                 {
+                 "end": "-ion",
+                 "words": ["connexion", "génération","information","population","révolution","tradition","comprehension","décision","occasion","opinion","passion","région"],
+                 "exceptions": ["avion","champion","bastion"],
+                 "lesson":"lesson9",
+                 "gender": "feminin"
+                 },
+                 
+                 {
+                 "end": "-ite",
+                 "words": ["appendicite","conduite","élite","limite","marguerite","réussite"],
+                 "exceptions": ["anthracite","gîte","insolite","mérite","rite","satellite","site","sulfite","termite"],
+                 "lesson":"lesson9",
+                 "gender": "feminin"
+                 }
+                 ]
+}

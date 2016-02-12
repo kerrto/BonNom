@@ -26,6 +26,7 @@
 		ABAEC6721C6E215800950CE3 /* 120e.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6711C6E215800950CE3 /* 120e.png */; };
 		ABAEC6741C6E219E00950CE3 /* 180e.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6731C6E219E00950CE3 /* 180e.png */; };
 		ABAEC6761C6E266D00950CE3 /* bige.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6751C6E266D00950CE3 /* bige.png */; };
+		ABAEC6781C6E42F600950CE3 /* AddNewToJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6771C6E42F600950CE3 /* AddNewToJSON.json */; };
 		ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B71C6824BC0053F585 /* TestJSON.json */; };
 		ABFA44CA1C69424D0053F585 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44C91C69424D0053F585 /* Question.m */; };
 		ABFA44CD1C6A4E7C0053F585 /* LessonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */; };
@@ -85,6 +86,7 @@
 		ABAEC6711C6E215800950CE3 /* 120e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120e.png; sourceTree = "<group>"; };
 		ABAEC6731C6E219E00950CE3 /* 180e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180e.png; sourceTree = "<group>"; };
 		ABAEC6751C6E266D00950CE3 /* bige.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bige.png; sourceTree = "<group>"; };
+		ABAEC6771C6E42F600950CE3 /* AddNewToJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AddNewToJSON.json; sourceTree = "<group>"; };
 		ABFA44B71C6824BC0053F585 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
 		ABFA44C81C69424D0053F585 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		ABFA44C91C69424D0053F585 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				ABFA44C81C69424D0053F585 /* Question.h */,
 				ABFA44C91C69424D0053F585 /* Question.m */,
 				ABFA44B71C6824BC0053F585 /* TestJSON.json */,
+				ABAEC6771C6E42F600950CE3 /* AddNewToJSON.json */,
 				AB89A2551C64597000B9F46A /* Main.storyboard */,
 				ABFA44D11C6A53EF0053F585 /* JSONParse.h */,
 				ABFA44D21C6A53EF0053F585 /* JSONParse.m */,
@@ -363,6 +366,7 @@
 				AB89A25C1C64597000B9F46A /* Assets.xcassets in Resources */,
 				ABAEC6641C6D31B100950CE3 /* blackboard.png in Resources */,
 				ABAEC6661C6D576D00950CE3 /* eiffel-tower-hi.png in Resources */,
+				ABAEC6781C6E42F600950CE3 /* AddNewToJSON.json in Resources */,
 				AB89A2571C64597000B9F46A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

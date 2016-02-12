@@ -35,6 +35,8 @@
     self.title = @"Lessons";
     self.tabBarItem.image = [UIImage imageNamed:@"blackboard.png"];
     
+    
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
