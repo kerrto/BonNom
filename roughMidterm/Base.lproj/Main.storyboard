@@ -405,10 +405,10 @@
             </objects>
             <point key="canvasLocation" x="682" y="865"/>
         </scene>
-        <!--Detail Table View Controller-->
+        <!--Lesson Detail-->
         <scene sceneID="5pq-Ck-QNz">
             <objects>
-                <tableViewController storyboardIdentifier="DetailTableViewController" id="Odr-ZK-Zt4" customClass="DetailTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DetailTableViewController" title="Lesson Detail" id="Odr-ZK-Zt4" customClass="DetailTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="245" sectionHeaderHeight="28" sectionFooterHeight="28" id="zbU-g4-XKF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
