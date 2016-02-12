@@ -25,6 +25,7 @@
 		ABAEC6701C6E209C00950CE3 /* 80e.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC66F1C6E209C00950CE3 /* 80e.png */; };
 		ABAEC6721C6E215800950CE3 /* 120e.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6711C6E215800950CE3 /* 120e.png */; };
 		ABAEC6741C6E219E00950CE3 /* 180e.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6731C6E219E00950CE3 /* 180e.png */; };
+		ABAEC6761C6E266D00950CE3 /* bige.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAEC6751C6E266D00950CE3 /* bige.png */; };
 		ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = ABFA44B71C6824BC0053F585 /* TestJSON.json */; };
 		ABFA44CA1C69424D0053F585 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44C91C69424D0053F585 /* Question.m */; };
 		ABFA44CD1C6A4E7C0053F585 /* LessonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA44CC1C6A4E7C0053F585 /* LessonTableViewController.m */; };
@@ -83,6 +84,7 @@
 		ABAEC66F1C6E209C00950CE3 /* 80e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80e.png; sourceTree = "<group>"; };
 		ABAEC6711C6E215800950CE3 /* 120e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120e.png; sourceTree = "<group>"; };
 		ABAEC6731C6E219E00950CE3 /* 180e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180e.png; sourceTree = "<group>"; };
+		ABAEC6751C6E266D00950CE3 /* bige.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bige.png; sourceTree = "<group>"; };
 		ABFA44B71C6824BC0053F585 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
 		ABFA44C81C69424D0053F585 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		ABFA44C91C69424D0053F585 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		AB89A24C1C64597000B9F46A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ABAEC6751C6E266D00950CE3 /* bige.png */,
 				ABAEC6651C6D576D00950CE3 /* eiffel-tower-hi.png */,
 				ABAEC66D1C6E202C00950CE3 /* newé.png */,
 				ABAEC6691C6E1ED400950CE3 /* é.png */,
@@ -351,6 +354,7 @@
 				ABFA44B81C6824BC0053F585 /* TestJSON.json in Resources */,
 				ABAEC65E1C6D293A00950CE3 /* yesnoicon.png in Resources */,
 				ABAEC6701C6E209C00950CE3 /* 80e.png in Resources */,
+				ABAEC6761C6E266D00950CE3 /* bige.png in Resources */,
 				ABAEC6721C6E215800950CE3 /* 120e.png in Resources */,
 				AB89A25F1C64597000B9F46A /* LaunchScreen.storyboard in Resources */,
 				ABAEC6741C6E219E00950CE3 /* 180e.png in Resources */,
