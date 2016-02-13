@@ -1,52 +1,52 @@
 {
-    "name": "lesson9",
+    "name": "lesson10",
     "questions":[
                  
                  {
-                 "end": "-x,-xe",
-                 "words": ["axe", "circonflexe", "complexe","équinoxe","flux","inox","juke-box","larynx","luxe","lynx","paradoxe","sexe"],
-                 "exceptions": ["boxe","syntaxe","taxe"],
-                 "lesson":"lesson9",
+                 "end": "-o",
+                 "words": ["lavabo", "vélo", "numéro"],
+                 "exceptions": ["méteo","photo","stéréo","philo","psycho","vidéo"],
+                 "lesson":"lesson10",
                  "gender": "masculin"
                  },
                  
                  {
-                 "end": "-phone",
-                 "words": ["magnétophone", "mégaphone","microphone","saxophone","téléphone","xylophone"],
+                 "end": "-ot",
+                 "words": ["abricot", "coquelicot","effort","escargot","paquebot"],
                  "exceptions": [],
-                 "lesson":"lesson9",
+                 "lesson":"lesson10",
                  "gender": "masculin"
                  },
                  
                  {
-                 "end": "-scope",
-                 "words": ["horoscope","microscope","téléscope","trombinoscope","kaléidoscope","magnétoscope"],
+                 "end": "-ort",
+                 "words": ["effort","sport"],
                  "exceptions": [],
-                 "lesson":"lesson9",
+                 "lesson":"lesson10",
                  "gender": "masculin"
                  },
                  
                  {
-                 "end": "-ble",
-                 "words": ["sable", "câble"],
-                 "exceptions": ["fable","table"],
-                 "lesson":"lesson9",
+                 "end": "-us",
+                 "words": ["cactus", "jus","nimbus"],
+                 "exceptions": [],
+                 "lesson":"lesson10",
                  "gender": "masculin"
                  },
                  
                  {
-                 "end": "-ion",
-                 "words": ["connexion", "génération","information","population","révolution","tradition","comprehension","décision","occasion","opinion","passion","région"],
-                 "exceptions": ["avion","champion","bastion"],
-                 "lesson":"lesson9",
+                 "end": "-té/-tié",
+                 "words": ["amité", "cécité","laïcité","pitié","santé","virilité"],
+                 "exceptions": ["aparté","arrêté","bastion","côté","été","karaté","comité","comté","traité"],
+                 "lesson":"lesson10",
                  "gender": "feminin"
                  },
                  
                  {
-                 "end": "-ite",
-                 "words": ["appendicite","conduite","élite","limite","marguerite","réussite"],
-                 "exceptions": ["anthracite","gîte","insolite","mérite","rite","satellite","site","sulfite","termite"],
-                 "lesson":"lesson9",
+                 "end": "-ode",
+                 "words": ["commode","méthode","mode","ode","pagode","période"],
+                 "exceptions": ["antipode","code","épisode","exode","mode"],
+                 "lesson":"lesson10",
                  "gender": "feminin"
                  }
                  ]

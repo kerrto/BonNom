@@ -502,9 +502,61 @@
                             "gender": "feminin"
                             }
                             ]
+               },
+               
+               {
+               "name": "lesson10",
+               "questions":[
+                            
+                            {
+                            "end": "-o",
+                            "words": ["lavabo", "vélo", "numéro"],
+                            "exceptions": ["méteo","photo","stéréo","philo","psycho","vidéo"],
+                            "lesson":"lesson10",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ot",
+                            "words": ["abricot", "coquelicot","effort","escargot","paquebot"],
+                            "exceptions": [],
+                            "lesson":"lesson10",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-ort",
+                            "words": ["effort","sport"],
+                            "exceptions": [],
+                            "lesson":"lesson10",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-us",
+                            "words": ["cactus", "jus","nimbus"],
+                            "exceptions": [],
+                            "lesson":"lesson10",
+                            "gender": "masculin"
+                            },
+                            
+                            {
+                            "end": "-té/-tié",
+                            "words": ["amité", "cécité","laïcité","pitié","santé","virilité"],
+                            "exceptions": ["aparté","arrêté","bastion","côté","été","karaté","comité","comté","traité"],
+                            "lesson":"lesson10",
+                            "gender": "feminin"
+                            },
+                            
+                            {
+                            "end": "-ode",
+                            "words": ["commode","méthode","mode","ode","pagode","période"],
+                            "exceptions": ["antipode","code","épisode","exode","mode"],
+                            "lesson":"lesson10",
+                            "gender": "feminin"
+                            }
+                            ]
                }
-               
-               
                
 
 ]
