@@ -71,9 +71,7 @@
           
             [self.lessonsArray addObject:currentLesson];
         }
-        
-        NSLog(@"%@",self.questions);
-        NSLog(@"%@",self.lessonsArray);
+
         
         }
     
