@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-BonNom.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9B57F4EE4746045CEAE2D933A3C8EC9E</key>
+		<key>894CCC2A0AEEE1B14F2BB16A7D5D120F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA494BEA48FE50EF5B6F822E688BAFED</key>
+		<key>9B57F4EE4746045CEAE2D933A3C8EC9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
